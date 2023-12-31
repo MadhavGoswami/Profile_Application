@@ -12,7 +12,7 @@ app.config['MYSQL_PASSWORD'] = 'newpassword'
 app.config['MYSQL_DB'] = 'newdatabase'
 
 mysql = MySQL(app)
-app.secret_key = 'your secret key'
+app.secret_key = 'wqwqwqwq'
 
 
 @app.route('/')
