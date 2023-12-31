@@ -1,0 +1,30 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>register</title>
+  <link rel="stylesheet" href="static/style2.css">
+  </head>
+<body>
+    <div class="registercontent" align="center">
+        <div class="registertop">
+            <h1>REGISTER<h1>
+        </div></br></br>
+        <div class="registerbottom">
+        <form action="{{url_for('register')}}"  method="post" autocomplete="off">
+        <div class='msg'>{{msg}}</div>
+        <input type="text" name="username" placeholder="Enter your username" class="textbox" id="username"  required></br></br>
+        <input type="password" name="password" placeholder="Enter your password" class="textbox" id="password"  required></br></br>  
+        <input type="email" name="email" placeholder="Enter your email" class="textbox" id="email"  required></br></br>  
+        <input type="text" name="organisation" placeholder="Enter your organisation" class="textbox" id="organisation"  required></br></br>  
+        <input type="text" name="address" placeholder="Enter your address" class="textbox" id="address"  required></br></br>  
+        <input type="text" name="city" placeholder="Enter your city" class="textbox" id="city"  required></br></br>  
+        <input type="text" name="state" placeholder="Enter your state" class="textbox" id="state"  required></br></br>  
+        <input type="text" name="country" placeholder="Enter your country" class="textbox" id="country"  required></br></br>  
+        <input type="text" name="postalcode" placeholder="Enter your postalcode" class="textbox" id="postalcode"  required></br></br>
+        <input type="submit" class="btn" value="register">
+        </form>
+        <p class="worddark">Already have account? <a class="worddark" href="{{url_for('login')}}">Login Here</a></p>
+        </div>
+    </div>
+</body>
+</html>

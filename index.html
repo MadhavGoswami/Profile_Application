@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Index</title>
+        <link rel="stylesheet" href="static/style3.css">
+    </head>
+
+    <body bgcolor="#e6ffee">
+        <div class="one">
+            <div class="two">
+                <h1>Side Bar<h1>
+                <ul>
+                    <li class="active"><a href="{{url_for('index')}}">Index</a></li>
+                    <li><a href="{{url_for('display')}}">Display</a></li>
+                    <li><a href="{{url_for('update')}}">update</a></li>
+                    <li><a href="{{url_for('logout')}}">Logout</a></li>
+                </ul> 
+            </div>
+            <div class="content" align="center">
+                <div class="topbar">
+                    <h2>Welcome!! you are in index page</h2>
+                </div></br></br>
+                <div class="contentbar">
+                    <div class="msg">{{msg}}</div>  
+                </div>           
+            </div>    
+        </div>    
+    </body>
+</html>        
